@@ -28,10 +28,10 @@
           "name": "cyberfactions-api-1.0.4.jar",
           "url": "cyberfactions-api-1.0.4.jar",
           "size": 22238,
-          "sha512": "c4314426b64b49c4c7b480e21977b2a7c67cba14cb9fe2faf6b4f7a4a4e46f7238f2b05e3117aa1c0c40cce9562336ee93ec63804f011a0b748c0ad13f629171",
-          "sha256": "5242fb0b5c93fd422ee2b90226c97d05ba9eaa5ae9d7a6f876f118d544a81637",
-          "sha1": "20dc99c76c694e4afb3f1ba6166df2f501999fd5",
-          "md5": "8758721a86d1541286040a7d684e74e3"
+          "sha512": "87162654c36ce7b7c554ad749e662e5856c0564743b70b856f879a678a21aac2e16f0e0fcafdec7e4ed9af900fc0deb728d34cf1bb7ab6c3d4cf14784762d79a",
+          "sha256": "7dc192697cf63362b6756a1898a9640e914d36516634d2db178fb9d789d65202",
+          "sha1": "da0d497920e0b9d1df27a824589d477aaf376eb0",
+          "md5": "7d95c95c04eae15ad072845758c63d47"
         }
       ]
     },
@@ -49,10 +49,10 @@
           "name": "cyberfactions-api-1.0.4.jar",
           "url": "cyberfactions-api-1.0.4.jar",
           "size": 22238,
-          "sha512": "c4314426b64b49c4c7b480e21977b2a7c67cba14cb9fe2faf6b4f7a4a4e46f7238f2b05e3117aa1c0c40cce9562336ee93ec63804f011a0b748c0ad13f629171",
-          "sha256": "5242fb0b5c93fd422ee2b90226c97d05ba9eaa5ae9d7a6f876f118d544a81637",
-          "sha1": "20dc99c76c694e4afb3f1ba6166df2f501999fd5",
-          "md5": "8758721a86d1541286040a7d684e74e3"
+          "sha512": "87162654c36ce7b7c554ad749e662e5856c0564743b70b856f879a678a21aac2e16f0e0fcafdec7e4ed9af900fc0deb728d34cf1bb7ab6c3d4cf14784762d79a",
+          "sha256": "7dc192697cf63362b6756a1898a9640e914d36516634d2db178fb9d789d65202",
+          "sha1": "da0d497920e0b9d1df27a824589d477aaf376eb0",
+          "md5": "7d95c95c04eae15ad072845758c63d47"
         }
       ]
     },
@@ -69,10 +69,10 @@
           "name": "cyberfactions-api-1.0.4-sources.jar",
           "url": "cyberfactions-api-1.0.4-sources.jar",
           "size": 13557,
-          "sha512": "499ad4cde2309e284f58d1dc172781d038d17e34112125d8fb55eda137984c6fdce34bb398668d14b578dd293ec2315d71db87109f2a4eca3cfff7bb156d4876",
-          "sha256": "c111957369ef82d84f620a39227903649ff8286ec3f08a7f7c375fa28e529cfe",
-          "sha1": "a5cfb9ac2ed86fb671f66de81cb1fcc8f81dac66",
-          "md5": "84392cbcc0521f27a0c3724c7440213d"
+          "sha512": "dc029ff44758216552735998936e3bee8f0113000d2529c0a8698c14f3463b01cebb432c40030fbe7d86c189acd7fa4e6f72ad3305bfd4e8eb93ffd7c4070d75",
+          "sha256": "e22319a7187c2b037ad8e8d66fce276f6f8176078d6c5596f856c14abe60ac4d",
+          "sha1": "439fd49e4f245db9a84ce295b3425c95d4f461a2",
+          "md5": "1813148203a9731dbc25b9d9d1d894f6"
         }
       ]
     },
@@ -89,10 +89,10 @@
           "name": "cyberfactions-api-1.0.4-javadoc.jar",
           "url": "cyberfactions-api-1.0.4-javadoc.jar",
           "size": 210534,
-          "sha512": "32fc48ee1f648cee31a599f003a70b272a308fb1ebb1d9fe8a52d9ef6faa7aa995009d81cbb5d4dbcae794db6b2fca8bed00f0813773208a57afd7d4a3e58ec8",
-          "sha256": "67e80c6387cdb0f93fb0480dad7db430d509acab75e50504df1e0f035e4cd0e6",
-          "sha1": "b39992c82d496a15219aef587ae333d032c4d19d",
-          "md5": "ab2cb0bfa5486be6b63bc125eb266efd"
+          "sha512": "34fc098c6790bb799b175f2ad3db6ee86cad91ab0ec6839888ef55204f3f42bf767d3d4243ad05138166fa99dedd2354a5f6a7c363e17fc1e455ae478261f995",
+          "sha256": "46157d701e5f34cde467d4f7855b2981bbd0ed65a1858568a3673711b289c581",
+          "sha1": "1376ba4b11f59441834a389940ad0a3d9cbd4427",
+          "md5": "e394d4dcaf69f6904c564f2ef472928b"
         }
       ]
     }
