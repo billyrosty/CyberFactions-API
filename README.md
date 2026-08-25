@@ -13,7 +13,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("fr.billyrosty:cyberfactions-api:0.2.1")
+    compileOnly("fr.billyrosty:cyberfactions-api:0.2.2")
 }
 ```
 
@@ -25,7 +25,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'fr.billyrosty:cyberfactions-api:0.2.1'
+    compileOnly 'fr.billyrosty:cyberfactions-api:0.2.2'
 }
 ```
 
@@ -43,7 +43,7 @@ dependencies {
     <dependency>
         <groupId>fr.billyrosty</groupId>
         <artifactId>cyberfactions-api</artifactId>
-        <version>0.2.1</version>
+        <version>0.2.2</version>
         <scope>provided</scope>
     </dependency>
 </dependencies>
