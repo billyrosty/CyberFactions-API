@@ -1,0 +1,238 @@
+<!doctype html>
+<!--
+  Landing page for the CyberFactions API Maven repository.
+
+  The repository itself is a directory tree of artifacts, so hitting its root
+  in a browser used to return a 404. The release workflow copies this file to
+  the publish directory and fills in the version placeholder from the tag, so
+  the root now answers with the same instructions as API_README.md. Keep the
+  two in step -- and note that the placeholder is a plain word substituted by
+  sed, so do not write it anywhere it should survive.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CyberFactions API</title>
+<meta name="description" content="Public Maven repository and API reference for building CyberFactions addons.">
+<style>
+:root{
+  --bg:#ffffff;
+  --bg-soft:#f7eef9;
+  --bg-code:#f7f4fb;
+  --ink:#2a0b36;
+  --ink-2:#5c4166;
+  --ink-3:#7d6486;
+  --rule:#e6d0ea;
+  --cyan:#1b8fc4;
+  --magenta:#a62c86;
+  --magenta-2:#c0388f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#170624;
+    --bg-soft:#210931;
+    --bg-code:#100418;
+    --ink:#f6edfa;
+    --ink-2:#c7b0d4;
+    --ink-3:#94789f;
+    --rule:#3f1758;
+    --cyan:#4dbde8;
+    --magenta:#f2a3d3;
+    --magenta-2:#e070b8;
+  }
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:820px;margin:0 auto;padding:56px 24px 96px}
+header{border-bottom:1px solid var(--rule);padding-bottom:28px;margin-bottom:8px}
+h1{
+  font-size:clamp(30px,5vw,42px);
+  line-height:1.08;
+  letter-spacing:-.02em;
+  margin:0 0 10px;
+  background:linear-gradient(100deg,var(--cyan),var(--magenta-2) 70%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+.tagline{color:var(--ink-2);margin:0 0 18px;font-size:18px;max-width:60ch}
+.badges{display:flex;flex-wrap:wrap;gap:8px}
+.badge{
+  font:600 12px/1 ui-monospace,SFMono-Regular,Consolas,monospace;
+  letter-spacing:.04em;
+  padding:7px 11px;
+  border-radius:20px;
+  background:var(--bg-soft);
+  border:1px solid var(--rule);
+  color:var(--ink-2);
+}
+.badge.v{border-color:var(--magenta-2);color:var(--magenta)}
+h2{
+  font-size:22px;
+  letter-spacing:-.01em;
+  margin:44px 0 6px;
+  padding-top:22px;
+  border-top:1px solid var(--rule);
+}
+h2:first-of-type{border-top:0;padding-top:0}
+h3{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);margin:26px 0 6px}
+p{margin:0 0 1em;color:var(--ink-2)}
+a{color:var(--magenta);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:2px}
+pre{
+  background:var(--bg-code);
+  border:1px solid var(--rule);
+  border-radius:8px;
+  padding:14px 16px;
+  overflow-x:auto;
+  margin:10px 0 18px;
+}
+code{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;font-size:13.5px}
+p code,td code{
+  background:var(--bg-soft);
+  border:1px solid var(--rule);
+  border-radius:4px;
+  padding:.1em .35em;
+  font-size:.88em;
+}
+pre code{background:none;border:0;padding:0;color:var(--ink-2);white-space:pre}
+.tablewrap{overflow-x:auto;border:1px solid var(--rule);border-radius:8px;margin:14px 0 20px}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--rule);vertical-align:top}
+thead th{background:var(--bg-soft);font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-3);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+.note{
+  border:1px solid var(--rule);
+  border-left:3px solid var(--cyan);
+  border-radius:0 8px 8px 0;
+  background:var(--bg-soft);
+  padding:14px 18px;
+  margin:22px 0;
+}
+.note p:last-child{margin-bottom:0}
+footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--rule);color:var(--ink-3);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>CyberFactions API</h1>
+  <p class="tagline">Public API for building addons that interact with CyberFactions — a feature-rich Factions plugin for Paper 1.21.4+.</p>
+  <div class="badges">
+    <span class="badge v">0.5.0</span>
+    <span class="badge">fr.billyrosty:cyberfactions-api</span>
+    <span class="badge">MIT</span>
+    <span class="badge">Java 21</span>
+  </div>
+</header>
+
+<div class="note">
+  <p>This host is a <strong>Maven repository</strong>. Point your build tool at
+  <code>https://billyrosty.github.io/CyberFactions-API</code> — there is nothing to download
+  by hand.</p>
+</div>
+
+<h2>Installation</h2>
+
+<h3>Gradle · Kotlin DSL</h3>
+<pre><code>repositories {
+    maven("https://billyrosty.github.io/CyberFactions-API")
+}
+
+dependencies {
+    compileOnly("fr.billyrosty:cyberfactions-api:0.5.0")
+}</code></pre>
+
+<h3>Gradle · Groovy DSL</h3>
+<pre><code>repositories {
+    maven { url 'https://billyrosty.github.io/CyberFactions-API' }
+}
+
+dependencies {
+    compileOnly 'fr.billyrosty:cyberfactions-api:0.5.0'
+}</code></pre>
+
+<h3>Maven</h3>
+<pre><code>&lt;repositories&gt;
+    &lt;repository&gt;
+        &lt;id&gt;cyberfactions&lt;/id&gt;
+        &lt;url&gt;https://billyrosty.github.io/CyberFactions-API&lt;/url&gt;
+    &lt;/repository&gt;
+&lt;/repositories&gt;
+
+&lt;dependencies&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;fr.billyrosty&lt;/groupId&gt;
+        &lt;artifactId&gt;cyberfactions-api&lt;/artifactId&gt;
+        &lt;version&gt;0.5.0&lt;/version&gt;
+        &lt;scope&gt;provided&lt;/scope&gt;
+    &lt;/dependency&gt;
+&lt;/dependencies&gt;</code></pre>
+
+<h3>plugin.yml</h3>
+<pre><code>name: MyAddon
+version: 1.0.0
+main: com.example.myaddon.MyAddon
+depend: [CyberFactions]</code></pre>
+
+<h2>Quick start</h2>
+<pre><code>import fr.billyrosty.factions.api.CyberFactionsAPI;
+import fr.billyrosty.factions.api.service.FactionService;
+import fr.billyrosty.factions.api.model.FactionSnapshot;
+
+public class MyAddon extends JavaPlugin {
+
+    @Override
+    public void onEnable() {
+        CyberFactionsAPI api = CyberFactionsAPI.getInstance();
+        FactionService factions = api.getFactionService();
+
+        // Get a faction by name
+        factions.getFaction("MyFaction").ifPresent(faction -&gt; {
+            getLogger().info("Found faction: " + faction.getName()
+                + " with " + faction.getMembers().size() + " members");
+        });
+    }
+}</code></pre>
+
+<h2>Available services</h2>
+<div class="tablewrap">
+<table>
+  <thead>
+    <tr><th>Service</th><th>Access</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>FactionService</code></td><td><code>api.getFactionService()</code></td><td>CRUD factions, members, roles</td></tr>
+    <tr><td><code>PlayerService</code></td><td><code>api.getPlayerService()</code></td><td>Player state, power, faction membership</td></tr>
+    <tr><td><code>ClaimService</code></td><td><code>api.getClaimService()</code></td><td>Claim/unclaim chunks, query territory</td></tr>
+    <tr><td><code>EconomyService</code></td><td><code>api.getEconomyService()</code></td><td>Faction bank operations</td></tr>
+    <tr><td><code>RelationService</code></td><td><code>api.getRelationService()</code></td><td>Set/query faction relations</td></tr>
+    <tr><td><code>TeleportationService</code></td><td><code>api.getTeleportationService()</code></td><td>Homes, warps</td></tr>
+    <tr><td><code>CommandRegistry</code></td><td><code>api.getCommandRegistry()</code></td><td>Register custom <code>/f</code> subcommands</td></tr>
+    <tr><td><code>PermissionRegistry</code></td><td><code>api.getPermissionRegistry()</code></td><td>Register custom faction permissions</td></tr>
+    <tr><td><code>UpgradeRegistry</code></td><td><code>api.getUpgradeRegistry()</code></td><td>Register custom upgrade properties</td></tr>
+    <tr><td><code>AddonRegistry</code></td><td><code>api.getAddonRegistry()</code></td><td>Lifecycle-managed addon system</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Documentation</h2>
+<p>Full API documentation with examples:
+<a href="https://billyrosty.github.io/CyberFactions-Docs/api/">billyrosty.github.io/CyberFactions-Docs</a></p>
+
+<footer>
+  <p style="margin:0">MIT — see <a href="LICENSE">LICENSE</a>. Also available as
+  <a href="README.md">README.md</a>.</p>
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # CyberFactions API
 
-Public API for building addons that interact with [CyberFactions](https://www.spigotmc.org/resources/cyberfactions/) — a
+Public API for building addons that interact with CyberFactions — a
 feature-rich Factions plugin for Paper 1.21.4+.
 
 ## Installation
@@ -13,7 +13,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("fr.billyrosty:cyberfactions-api:0.4.0")
+    compileOnly("fr.billyrosty:cyberfactions-api:0.5.0")
 }
 ```
 
@@ -25,7 +25,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'fr.billyrosty:cyberfactions-api:0.4.0'
+    compileOnly 'fr.billyrosty:cyberfactions-api:0.5.0'
 }
 ```
 
@@ -43,7 +43,7 @@ dependencies {
     <dependency>
         <groupId>fr.billyrosty</groupId>
         <artifactId>cyberfactions-api</artifactId>
-        <version>0.4.0</version>
+        <version>0.5.0</version>
         <scope>provided</scope>
     </dependency>
 </dependencies>
@@ -98,7 +98,7 @@ public class MyAddon extends JavaPlugin {
 
 ## Documentation
 
-Full API documentation with examples: [docs.cyberfactions.com](https://docs.cyberfactions.com) *(coming soon)*
+Full API documentation with examples: [billyrosty.github.io/CyberFactions-Docs](https://billyrosty.github.io/CyberFactions-Docs/api/)
 
 ## License
 
