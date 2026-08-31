@@ -1,0 +1,100 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "fr.billyrosty",
+    "module": "cyberfactions-api",
+    "version": "0.5.7",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "cyberfactions-api-0.5.7.jar",
+          "url": "cyberfactions-api-0.5.7.jar",
+          "size": 41823,
+          "sha512": "da8b22bd664ee3dad695c067b0abddbc33b45cb82e2c0d2de4ba4982f1329e27ae347d0d9595a34188079390b6d3e86749ee611977aae42bd40d383e116b399d",
+          "sha256": "b2d3efe48ec0b881463b0d92894cf6ece9b238360389936615ec77a6864bec84",
+          "sha1": "408eb2f0c52cd945a34e681e2705742a7a7f3f35",
+          "md5": "62d238fc9ecf1b40000b2d089050cd64"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "cyberfactions-api-0.5.7.jar",
+          "url": "cyberfactions-api-0.5.7.jar",
+          "size": 41823,
+          "sha512": "da8b22bd664ee3dad695c067b0abddbc33b45cb82e2c0d2de4ba4982f1329e27ae347d0d9595a34188079390b6d3e86749ee611977aae42bd40d383e116b399d",
+          "sha256": "b2d3efe48ec0b881463b0d92894cf6ece9b238360389936615ec77a6864bec84",
+          "sha1": "408eb2f0c52cd945a34e681e2705742a7a7f3f35",
+          "md5": "62d238fc9ecf1b40000b2d089050cd64"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "cyberfactions-api-0.5.7-sources.jar",
+          "url": "cyberfactions-api-0.5.7-sources.jar",
+          "size": 28181,
+          "sha512": "1446baec3cf337f42393faf7e57e7749fdfaf2fb4ca8348436aed43b0c497dac5953af067dd3c2aa6140bf0d40832286762306f0b1ab067a45e6383a9c96cdb4",
+          "sha256": "c051bb0cb97d2589b4c464389ad6145154c2c3725c202804532026dacb2a6253",
+          "sha1": "1b71f0f0be0e725e936999e5f7caf50d24a6833b",
+          "md5": "6c9075b41114cfe7aaf17daccadbfcfb"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "cyberfactions-api-0.5.7-javadoc.jar",
+          "url": "cyberfactions-api-0.5.7-javadoc.jar",
+          "size": 292192,
+          "sha512": "42240ebffac189cc0811b9eee8a98f876cdd31ad43e62c3a817259805b9120e07660c36d3cb56919f0f622b676eba6aee0713d375d6d8c8c127c044dc344a744",
+          "sha256": "ce003dd874cd5107f58a1b46538cf95163a9ee1ab750e51e1f7005fab0ac8716",
+          "sha1": "f16f7d51567e03ea024e7d3a49ce91d66c239e86",
+          "md5": "73afd39a65ebbbb28af755a23d18af45"
+        }
+      ]
+    }
+  ]
+}
